@@ -8,3 +8,4 @@
 2025-10-30T00:13:22.996Z - Actualizar CHANGELOG.md y README.md con todas las funciones; actualizar STORIES; push con label "funciones ok".
 2025-10-30T00:14:24.683Z - Agregar test de integración cubriendo API y CLI (--n, --out, prompt por teclado).
 2025-10-30T00:15:52.851Z - Correcciones para pasar Ruff: docstrings de módulos/funciones y configuración [tool.ruff.lint].
+2025-10-30T00:20:17.672Z - Push al main con label "CI-OK".
