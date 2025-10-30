@@ -1,5 +1,6 @@
 # CHANGELOG
 
+- 2025-10-30: Versión 1.0 build 010: Fix pytest ModuleNotFoundError añadiendo tests/conftest.py.
 - 2025-10-30: Versión 1.0 build 009: CI-OK.
 - 2025-10-30: Versión 1.0 build 007: Corregir advertencias de Ruff y docstrings (PEP257).
 - 2025-10-30: Versión 1.0 build 006: Agrega test de integración para API y CLI (--n, --out, entrada por teclado).
