@@ -1,3 +1,5 @@
+"""Funciones para cálculo de factorial."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -24,6 +26,7 @@ def factorial(n: int) -> int:
         If n is not an int.
     ValueError
         If n is negative.
+
     """
     if not isinstance(n, int):
         raise TypeError("n must be an int")

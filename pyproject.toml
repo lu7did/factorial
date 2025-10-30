@@ -21,8 +21,6 @@ target-version = ["py312"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-select = ["E", "F", "W", "I", "D", "UP", "B"]
-ignore = ["D203", "D212", "D213", "D406", "D407"]
 exclude = ["scripts", "ejemplos", "docs"]
 
 [tool.pydocstyle]
@@ -44,3 +42,7 @@ exclude = ["scripts", "ejemplos", "docs", ".venv"]
 [tool.coverage.run]
 source = ["src/factorial_pkg"]
 omit = ["scripts/*", "ejemplos/*", "docs/*"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "D", "UP", "B"]
+ignore = ["D203", "D212", "D213", "D406", "D407"]

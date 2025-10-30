@@ -1,3 +1,4 @@
+"""Paquete factorial_pkg: API para cálculo de factorial."""
 from .factorial import FactorialCalculator, factorial
 
 __all__ = ["FactorialCalculator", "factorial"]

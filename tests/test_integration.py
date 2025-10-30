@@ -1,3 +1,4 @@
+"""Tests para factorial_pkg."""
 import sys
 import subprocess
 from pathlib import Path
@@ -16,6 +17,7 @@ def run_cli(args: list[str], input_text: str | None = None) -> subprocess.Comple
 
 
 def test_cli_stdout() -> None:
+    """Prueba de integración."""
     proc = run_cli(["--n", "6"])  # 6! = 720
     assert proc.returncode == 0
     assert proc.stderr == ""
@@ -23,6 +25,7 @@ def test_cli_stdout() -> None:
 
 
 def test_cli_out_file(tmp_path: Path) -> None:
+    """Prueba de integración."""
     out = tmp_path / "resultado.txt"
     proc = run_cli(["--n", "7", "--out", str(out)])  # 7! = 5040
     assert proc.returncode == 0
@@ -33,6 +36,7 @@ def test_cli_out_file(tmp_path: Path) -> None:
 
 
 def test_cli_prompt_from_stdin() -> None:
+    """Prueba de integración."""
     proc = run_cli([], input_text="4\n")  # 4! = 24
     assert proc.returncode == 0
     # La primera línea puede contener el prompt; el resultado debe ser la última línea
@@ -40,5 +44,6 @@ def test_cli_prompt_from_stdin() -> None:
 
 
 def test_api_and_oop() -> None:
+    """Prueba de integración."""
     assert factorial(5) == 120
     assert FactorialCalculator().compute(5) == 120
