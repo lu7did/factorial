@@ -4,3 +4,4 @@
 2025-10-30T00:03:14.401Z - Push al main con label "primer proyecto".
 2025-10-30T00:06:59.749Z - Eliminar trufflehog como validación en cada push.
 2025-10-30T00:08:25.331Z - Al pasar --n por argumento, calcular sin pedir entrada por teclado.
+2025-10-30T00:10:35.804Z - Al informar --out y un nombre de archivo, se graba el resultado; caso contrario va a stdout.

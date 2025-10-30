@@ -1,6 +1,6 @@
 # factorial-pkg
 
-Versión 1.0 build 003
+Versión 1.0 build 004
 
 Paquete Python 3.12 para calcular el factorial cumpliendo CONTEXT.md. Incluye API, CLI, tests, CI y documentación.
 
@@ -11,6 +11,8 @@ Uso de librería:
 Uso de CLI:
 - python -m factorial_pkg --n 5
 - factorial --n 5
+- Para escribir en archivo: python -m factorial_pkg --n 5 --out resultado.txt
 - Si no se especifica --n, el programa solicitará el valor por teclado.
+- Si no se especifica --out, el resultado se imprime por salida estándar.
 
 Directorios scripts/ y ejemplos/ no se incluyen en el workflow de validación.
