@@ -1,4 +1,5 @@
 """Tests para factorial_pkg."""
+
 import pytest
 
 from factorial_pkg import FactorialCalculator, factorial

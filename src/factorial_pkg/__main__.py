@@ -1,4 +1,5 @@
 """CLI para calcular n!; admite --n y --out."""
+
 from __future__ import annotations
 
 import argparse

@@ -1,12 +1,14 @@
 """Tests para factorial_pkg."""
-import sys
+
 import subprocess
+import sys
 from pathlib import Path
 
-from factorial_pkg import factorial, FactorialCalculator
+from factorial_pkg import FactorialCalculator, factorial
 
 
 def run_cli(args: list[str], input_text: str | None = None) -> subprocess.CompletedProcess[str]:
+    """Ejecuta la CLI y retorna el proceso completado."""
     return subprocess.run(
         [sys.executable, "-m", "factorial_pkg", *args],
         input=input_text,
@@ -39,8 +41,9 @@ def test_cli_prompt_from_stdin() -> None:
     """Prueba de integración."""
     proc = run_cli([], input_text="4\n")  # 4! = 24
     assert proc.returncode == 0
-    # La primera línea puede contener el prompt; el resultado debe ser la última línea
-    assert proc.stdout.strip().splitlines()[-1] == "24"
+    # El resultado debe ser el último token de la última línea (puede incluir el prompt)
+    last_line = proc.stdout.strip().splitlines()[-1]
+    assert last_line.split()[-1] == "24"
 
 
 def test_api_and_oop() -> None:
