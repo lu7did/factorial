@@ -1,4 +1,5 @@
 """Configura sys.path para incluir el directorio 'src' durante los tests."""
+
 from __future__ import annotations
 
 import sys
