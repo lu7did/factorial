@@ -9,12 +9,17 @@ from factorial_pkg import FactorialCalculator, factorial
 
 def run_cli(args: list[str], input_text: str | None = None) -> subprocess.CompletedProcess[str]:
     """Ejecuta la CLI y retorna el proceso completado."""
+    env = os.environ.copy()
+    root = Path(__file__).resolve().parents[1]
+    src = str(root / "src")
+    env["PYTHONPATH"] = f"{src}{os.pathsep}" + env.get("PYTHONPATH", "")
     return subprocess.run(
         [sys.executable, "-m", "factorial_pkg", *args],
         input=input_text,
         capture_output=True,
         text=True,
         check=False,
+        env=env,
     )
 
 
