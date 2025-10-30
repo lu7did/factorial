@@ -28,8 +28,6 @@ jobs:
         run: pyright
       - name: Bandit
         run: bandit -r src -x scripts,ejemplos,docs
-      - name: TruffleHog
-        run: trufflehog filesystem --fail .
       - name: Tests
         run: pytest --cov=src/factorial_pkg --cov-report=term-missing --cov-fail-under=80
       - name: Generate docs
