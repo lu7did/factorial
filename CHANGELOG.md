@@ -1,5 +1,6 @@
 # CHANGELOG
 
+- 2025-10-29: Versión 1.0 build 009: Publicar documentación pdoc en docs.
 - 2025-10-30: Versión 1.0 build 011: CI-OK2.
 - 2025-10-30: Versión 1.0 build 010: Fix pytest ModuleNotFoundError añadiendo tests/conftest.py.
 - 2025-10-30: Versión 1.0 build 009: CI-OK.
