@@ -1,0 +1,46 @@
+[project]
+name = "factorial-pkg"
+version = "1.0.0"
+description = "Cálculo de factorial como paquete Python."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Dr. Pedro E. Colla (LU7DZ)" }]
+
+[project.scripts]
+factorial = "factorial_pkg.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+select = ["E", "F", "W", "I", "D", "UP", "B"]
+ignore = ["D203", "D212", "D213", "D406", "D407"]
+exclude = ["scripts", "ejemplos", "docs"]
+
+[tool.pydocstyle]
+convention = "pep257"
+add-ignore = "D203,D212,D213,D406,D407"
+match-dir = "(?!scripts|ejemplos|docs).*"
+match = ".*\\.py"
+
+[tool.mypy]
+python_version = "3.12"
+disallow_untyped_defs = true
+strict = true
+exclude = "(^scripts/|^ejemplos/|^docs/)"
+
+[tool.pyright]
+pythonVersion = "3.12"
+exclude = ["scripts", "ejemplos", "docs", ".venv"]
+
+[tool.coverage.run]
+source = ["src/factorial_pkg"]
+omit = ["scripts/*", "ejemplos/*", "docs/*"]
