@@ -1,5 +1,6 @@
 # CHANGELOG
 
+- 2025-10-30: Versión 1.0 build 006: Agrega test de integración para API y CLI (--n, --out, entrada por teclado).
 - 2025-10-30: Versión 1.0 build 005: Documentar todas las funciones y opciones de CLI (--n, --out).
 - 2025-10-30: Versión 1.0 build 004: CLI admite --out para escribir el resultado en archivo.
 - 2025-10-30: Versión 1.0 build 003: CLI acepta --n y evita solicitar por teclado cuando se provee.

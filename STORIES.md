@@ -6,3 +6,4 @@
 2025-10-30T00:08:25.331Z - Al pasar --n por argumento, calcular sin pedir entrada por teclado.
 2025-10-30T00:10:35.804Z - Al informar --out y un nombre de archivo, se graba el resultado; caso contrario va a stdout.
 2025-10-30T00:13:22.996Z - Actualizar CHANGELOG.md y README.md con todas las funciones; actualizar STORIES; push con label "funciones ok".
+2025-10-30T00:14:24.683Z - Agregar test de integración cubriendo API y CLI (--n, --out, prompt por teclado).

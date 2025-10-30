@@ -1,6 +1,6 @@
 # factorial-pkg
 
-Versión 1.0 build 005
+Versión 1.0 build 006
 
 Paquete Python 3.12 para calcular el factorial cumpliendo CONTEXT.md. Incluye API, CLI, tests, CI y documentación.
 
